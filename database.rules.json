@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "users": {
+        ".read": "auth.email === '1234@admin.io'",
+        ".write": "auth.email === '1234@admin.io' ",
+        "$usertag": {
+          ".read":  "auth.token.name + '+' +
+            auth.token.email.replace('@','').replace('.','').replace('#','').replace('$','').replace(',','')
+            === $usertag",
+          ".write": "auth.token.name + '+' +
+            auth.token.email.replace('@','').replace('.','').replace('#','').replace('$','').replace(',','')
+            === $usertag",
+        },
+     },
+    "repos": {
+         ".read": "auth.email === '1234@admin.io'",
+        ".write": "auth.email === '1234@admin.io' ",
+        "$usertag": {
+          ".read":  "auth.token.name + '+' +
+            auth.token.email.replace('@','').replace('.','').replace('#','').replace('$','').replace(',','')
+            === $usertag",
+          ".write": "auth.token.name + '+' +
+            auth.token.email.replace('@','').replace('.','').replace('#','').replace('$','').replace(',','')
+            === $usertag",
+        },
+    }
+  }
+}

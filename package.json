@@ -1,0 +1,37 @@
+{
+  "name": "duty2go",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "emoji-mart": "^2.6.1",
+    "firebase": "^6.0.2",
+    "google-maps-react": "^2.0.2",
+    "html2canvas": "^1.0.0-rc.1",
+    "jspdf": "^1.5.3",
+    "md5": "^2.2.1",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-avatar-editor": "^11.0.4",
+    "react-color": "^2.14.1",
+    "react-datetime": "^2.16.3",
+    "react-day-picker": "^7.3.0",
+    "react-dom": "^16.4.1",
+    "react-geocode": "0.1.2",
+    "react-icons": "^3.6.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.5",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.88.2",
+    "set-immediate-shim": "^2.0.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

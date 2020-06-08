@@ -1,0 +1,12 @@
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{filename}/{allPaths=**} {
+      allow read, write:
+      if filename[0:request.auth.token.name.size()+1] == request.auth.token.name+"+"
+       && filename[filename.size()-2:filename.size()] ==
+          request.auth.token.email[request.auth.token.email.size()-2:request.auth.token.email.size()]
+       && filename[request.auth.token.name.size()+1] == request.auth.token.email[0]
+       || request.auth.token.email =="1234@admin.io";
+    }
+  }
+}
